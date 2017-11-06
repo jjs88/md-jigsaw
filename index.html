@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Jigsaw Puzzle</title>
+</head>
+<body>
+
+
+    <h1 class="title">Jigsaw Puzzle</h1>
+
+    <div class="game-cntr">
+        
+        <div class="dashboard">
+            <div class="controls-cntr">
+                <h1 class="difficulty">Difficulty</h1>
+                <button class="btn btn-normal">Normal</button>
+                <button class="btn btn-hard">Hard</button>
+            </div>
+
+            <div class="game-start-cntr toggle-hidden">
+                <button class="btn btn-stop">Stop</button>
+                <button class="btn btn-hint">Hint<br>(hold)<br><span class="hint-cnt">3</span></button>
+                <div class="timer"><span class="minutes"></span><span class="seconds"></span></div>
+            </div>
+        </div>
+
+        <div class="game-board">
+
+          <div class="odd-col">
+              <div class="puzzle-slot" data-piece="piece-45"></div>
+              <div class="puzzle-slot" data-piece="piece-44"></div>
+              <div class="puzzle-slot" data-piece="piece-27"></div>
+              <div class="puzzle-slot" data-piece="piece-26"></div>
+              <div class="puzzle-slot" data-piece="piece-23"></div>
+          </div>
+
+          <div class="even-col">
+                <div class="puzzle-slot" data-piece="piece-43"></div>
+                <div class="puzzle-slot" data-piece="piece-42"></div>
+                <div class="puzzle-slot" data-piece="piece-25"></div>
+                <div class="puzzle-slot" data-piece="piece-24"></div>
+          </div>
+
+          <div class="odd-col">
+                <div class="puzzle-slot" data-piece="piece-41"></div>
+                <div class="puzzle-slot" data-piece="piece-40"></div>
+                <div class="puzzle-slot" data-piece="piece-18"></div>
+                <div class="puzzle-slot" data-piece="piece-17"></div>
+                <div class="puzzle-slot" data-piece="piece-22"></div>                
+          </div>
+
+          <div class="even-col">
+                <div class="puzzle-slot" data-piece="piece-39"></div>
+                <div class="puzzle-slot" data-piece="piece-38"></div>
+                <div class="puzzle-slot" data-piece="piece-16"></div>
+                <div class="puzzle-slot" data-piece="piece-15"></div>
+                
+          </div>
+
+          <div class="odd-col">
+                <div class="puzzle-slot" data-piece="piece-37"></div>
+                <div class="puzzle-slot" data-piece="piece-36"></div>
+                <div class="puzzle-slot" data-piece="piece-14"></div>
+                <div class="puzzle-slot" data-piece="piece-13"></div>
+                <div class="puzzle-slot" data-piece="piece-21"></div>             
+          </div>
+
+          <div class="even-col">
+                <div class="puzzle-slot" data-piece="piece-35"></div>
+                <div class="puzzle-slot" data-piece="piece-34"></div>
+                <div class="puzzle-slot" data-piece="piece-12"></div>
+                <div class="puzzle-slot" data-piece="piece-11"></div>                
+          </div>
+
+          <div class="odd-col">
+                <div class="puzzle-slot" data-piece="piece-33"></div>
+                <div class="puzzle-slot" data-piece="piece-32"></div>
+                <div class="puzzle-slot" data-piece="piece-10"></div>
+                <div class="puzzle-slot" data-piece="piece-9"></div>
+                <div class="puzzle-slot" data-piece="piece-20"></div>   
+          </div>
+
+          <div class="even-col">
+                <div class="puzzle-slot" data-piece="piece-31"></div>
+                <div class="puzzle-slot" data-piece="piece-30"></div>
+                <div class="puzzle-slot" data-piece="piece-8"></div>
+                <div class="puzzle-slot" data-piece="piece-7"></div>    
+          </div>
+
+          <div class="odd-col">
+                <div class="puzzle-slot" data-piece="piece-29"></div>
+                <div class="puzzle-slot" data-piece="piece-28"></div>
+                <div class="puzzle-slot" data-piece="piece-6"></div>
+                <div class="puzzle-slot" data-piece="piece-5"></div>
+                <div class="puzzle-slot" data-piece="piece-19"></div>   
+         </div>
+         
+         <img class="solved-pic toggle-hidden" src="img/_Puzzle_solved.png" alt="#">
+            
+        </div>  
+
+       <div class="modal toggle-hidden">
+           <div class="game-over-modal">
+               <h1>GAME OVER</h1>
+               <button class="btn btn-over">try again</button>
+           </div>
+       </div>
+    </div>
+
+
+
+
+    <div class="tray toggle-hidden"></div>
+
+    
+
+
+
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>

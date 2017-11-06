@@ -1,0 +1,230 @@
+
+body {
+    font-size: 150%;
+    background-color: #182430;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.game-cntr {
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    margin: 50px auto 0 auto;
+    /* border:1px solid white; */
+    width:1145px;
+    height:579px;
+
+}
+
+.dashboard {
+    background-color: #AF426A;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* align-content: center; */
+    /* border:1px solid #e08283; */
+    width:275px;
+    height:100%
+}
+
+
+.game-board {
+    border-radius: 5px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-flow: row nowrap;
+    position: relative;
+    /* border:1px solid white; */
+    width:868px;
+    height:100%;
+    background-image: url('img/_Puzzle_bg_unsolved.png');
+}
+
+
+.title {
+    font-weight: 600;
+    color:#eeeeee;
+    text-align: center;
+    margin:20px;
+}
+
+
+/* off set first margin to line up grid properly */
+.odd-col:first-child {
+    margin-left:40px;
+}
+
+.odd-col,
+.even-col
+ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border:1px solid white; */
+    /* width:85px; */
+    height:100%;
+}
+
+.odd-col {
+    width:81.8px;
+    /* height:85%; */
+    /* margin-left:30px; */
+    /* margin-left:-12px; */
+}
+
+.even-col {
+    width:87.4px;
+    /* margin-left:12px; */
+}
+
+.puzzle-slot {
+    width:80px;
+    height:95.3px;
+    /* border:1px solid white; */
+}
+
+
+.controls-cntr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: slideIn .5s ease-in;
+    /* justify-content: center; */
+}
+
+.game-start-cntr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: slideIn .5s ease-in;
+}
+
+.difficulty {
+    font-weight: 500;
+}
+
+.timer {
+    padding:5px;
+    margin:5px;
+}
+
+.solved-pic  {
+    position: absolute;
+    z-index: 200;
+    /* opacity: 0; */
+    /* display: none; */
+}
+
+.tray {
+    margin:0 auto;
+    width:1024px;
+    height:300px;
+    animation: slideIn .5s ease-in;
+}
+
+.toggle-hidden {
+    display: none;
+}
+
+.btn {
+    font-weight: 600;
+    color:#eeeeee;
+    background-color: #3fc380;
+    border: 2px solid #f5f5f5;
+    box-shadow: 0 0 3px gray;
+    font-size: 60%;
+    margin:10px;
+    display: block;
+    height:75px;
+    text-decoration: none;
+    width:75px;
+    border-radius:50%;
+}
+
+.btn:hover {
+    opacity:.9;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline:0;
+}
+
+.modal {
+    opacity: .9;
+    position: absolute;
+    z-index: 300;
+    width:100%;
+    height:100%;
+    background-color: #22313f;
+}
+
+.game-over-modal {
+    font-weight: 600;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    top:50px;
+    left:40%;
+    width:400px;
+    height:300px;
+    border:1px solid white;
+}
+
+
+
+
+.shake-piece {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes slideIn {
+    0% { opacity: 0;}
+
+    100% {opacity: 1;}
+}
+
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+      
+      20%, 80% {
+        transform: translate3d(2px, 0, 0);
+      }
+    
+      30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+      }
+    
+      40%, 60% {
+        transform: translate3d(4px, 0, 0);
+      }
+}
+
+
+
+
+
+
+
+
+
